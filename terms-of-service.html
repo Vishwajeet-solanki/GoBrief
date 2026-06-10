@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service – Leap Over (Bookiepia)</title>
+  <title>Terms of Service – GoBrief</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -43,10 +43,10 @@
 </head>
 <body>
   <h1>Terms of Service</h1>
-  <p class="updated">Last updated: March 22, 2025</p>
+  <p class="updated">Last updated: June 10, 2026</p>
 
   <p>
-    These Terms of Service (&quot;Terms&quot;) govern your use of <strong>Leap Over</strong> (also referred to as &quot;Bookiepia&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), including our mobile application (the &quot;App&quot;) and related services (together, the &quot;Services&quot;). By accessing or using the Services, you agree to these Terms. If you do not agree, do not use the Services.
+    These Terms of Service ("Terms") govern your use of <strong>GoBrief</strong> ("we", "us", or "our"), including our mobile application (the "App") and related services (together, the "Services"). By accessing or using the Services, you agree to these Terms. If you do not agree, do not use the Services.
   </p>
   <p>
     Our <a href="privacy-policy.html">Privacy Policy</a> explains how we collect and use personal information. By using the Services, you also acknowledge that policy.
@@ -54,87 +54,242 @@
 
   <h2>1. Eligibility and accounts</h2>
   <p>
-    You must be able to form a binding contract under applicable law to use the Services. The App is not intended for children under 13 (or the minimum age required in your region). If you create an account, you agree to provide accurate information and keep your credentials secure. You are responsible for activity under your account.
+    You must be able to form a binding contract under applicable law to use the Services. The App is not intended for children under 13 (or the minimum age required in your region). If you create an account, you agree to provide accurate information and keep your credentials secure. You are responsible for all activity under your account.
+  </p>
+  <p>
+    Account registration requires valid authentication via email/password or Google Sign-In through Firebase. You must be at least 13 years old (or the minimum age required in your jurisdiction) to create an account.
   </p>
 
   <h2>2. Description of the Services</h2>
   <p>
-    The App provides access to book-related audio and reading features, including playback, downloads where offered, sync, bookmarks, highlights, and optional subscription or premium features. We may add, change, or discontinue features with reasonable notice where practicable.
+    GoBrief is an Android audiobook application that delivers book summaries with text-to-speech narration, organized into curated categories and multi-day Growth Plans. The Services include:
+  </p>
+  <ul>
+    <li><strong>Audio Playback:</strong> Streaming and offline playback of audiobook content with adjustable playback speeds (0.5x to 2x).</li>
+    <li><strong>Text-to-Speech Generation:</strong> Audio generation using advanced TTS models (Sherpa ONNX) with customizable voice selections per book or section.</li>
+    <li><strong>Offline Downloads:</strong> Download audio content for offline listening where permitted.</li>
+    <li><strong>Cloud Sync:</strong> Synchronization of reading progress, bookmarks, highlights, playlists, and preferences across your devices via Firebase Firestore.</li>
+    <li><strong>Reading Progress:</strong> Track your listening progress with automatic position syncing and resume capability.</li>
+    <li><strong>Bookmarks and Highlights:</strong> Create and manage bookmarks and highlights within books.</li>
+    <li><strong>Sleep Timer:</strong> Set a sleep timer to automatically stop playback after a specified duration.</li>
+    <li><strong>Achievements and Growth Plans:</strong> Gamification features including reading streaks, achievements, and multi-day Growth Plans (challenges).</li>
+    <li><strong>Quizzes:</strong> Optional quiz features to test your comprehension of book content.</li>
+    <li><strong>Subscription Features:</strong> "Bookiepia Pro" premium subscription providing access to enhanced features and content.</li>
+  </ul>
+  <p>
+    We may add, modify, or discontinue features with reasonable notice where practicable.
   </p>
 
   <h2>3. Subscriptions and purchases</h2>
   <p>
-    Some features may require a paid subscription or one-time purchase processed through platform providers (e.g., Google Play). Prices, billing cycles, and renewal terms are shown at purchase and governed by the platform&apos;s terms. Subscriptions may renew automatically until cancelled in your platform account settings. We do not guarantee uninterrupted availability of any specific title or feature.
+    The App offers a premium subscription called <strong>"Bookiepia Pro"</strong> with the following options:
   </p>
-
-  <h2>4. License to use the App</h2>
+  <ul>
+    <li><strong>Monthly:</strong> Billed monthly on a recurring basis.</li>
+    <li><strong>Yearly:</strong> Billed annually on a recurring basis.</li>
+    <li><strong>Lifetime:</strong> One-time purchase for permanent access.</li>
+  </ul>
   <p>
-    Subject to these Terms, we grant you a personal, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your private, non-commercial use. You may not copy, modify, distribute, sell, lease, reverse engineer, or attempt to extract source code from the App except as allowed by mandatory law.
+    Subscriptions are processed through Google Play (Android). Prices, billing cycles, and renewal terms are displayed at purchase and governed by the platform's terms. Subscriptions renew automatically unless cancelled in your Google Play account settings.
   </p>
-
-  <h2>5. Content and intellectual property</h2>
   <p>
-    The Services, including software, text, graphics, logos, and audio content made available through the App, are owned by us or our licensors and protected by intellectual property laws. Except for the limited license above, no rights are granted to you. You may not circumvent technical measures, remove notices, or use the content outside the App in ways not expressly permitted.
+    Payments are managed through <strong>RevenueCat</strong>, which handles entitlement verification and subscription management on our behalf. You may manage or cancel your subscription through the App's customer center or your platform account settings.
+  </p>
+  <p>
+    We do not guarantee uninterrupted availability of any specific title, feature, or content. Some features may require a valid Bookiepia Pro subscription to access.
   </p>
 
-  <h2>6. Acceptable use</h2>
+  <h2>4. Account authentication and security</h2>
+  <p>
+    The App uses Firebase Authentication for secure account management, supporting:
+  </p>
+  <ul>
+    <li>Email and password registration</li>
+    <li>Google Sign-In</li>
+  </ul>
+  <p>
+    You agree to keep your login credentials secure and not share your account with others. You are responsible for all activity under your account. If you suspect unauthorized access, notify us immediately at the contact information below.
+  </p>
+
+  <h2>5. License to use the App</h2>
+  <p>
+    Subject to these Terms and your valid subscription (if applicable), we grant you a personal, non-exclusive, non-transferable, revocable license to install and use the App on devices you own or control, for your private, non-commercial use.
+  </p>
+  <p>
+    You may not:
+  </p>
+  <ul>
+    <li>Copy, modify, distribute, sell, lease, or create derivative works based on the App.</li>
+    <li>Reverse engineer, decompile, or attempt to extract the source code of the App.</li>
+    <li>Circumvent any technical measures protecting content or the App.</li>
+    <li>Use the App for commercial purposes without our written authorization.</li>
+  </ul>
+
+  <h2>6. Content and intellectual property</h2>
+  <p>
+    The Services, including all software, text, graphics, logos, audio content, and TTS-generated audio, are owned by us or our licensors and protected by intellectual property laws.
+  </p>
+  <p>
+    <strong>Encrypted Content and DRM:</strong> Audio content is delivered in encrypted form and requires a valid, unexpired license for each book. Licenses are:
+  </p>
+  <ul>
+    <li>Tied to your user account and the device on which they were issued.</li>
+    <li>Time-limited (TTL) and must be renewed periodically when connected to the internet.</li>
+    <li>Verified through our secure license service.</li>
+  </ul>
+  <p>
+    Except for the limited license above, no rights to use, copy, distribute, or create derivative works from content are granted to you. You must not circumvent DRM technology, remove proprietary notices, or use content outside the App in ways not expressly permitted.
+  </p>
+
+  <h2>7. Cloud synchronization</h2>
+  <p>
+    The App synchronizes your data (including reading progress, saved books, playlists, preferences, Growth Plan progress, and achievements) to Firebase Firestore for cross-device access. This sync occurs automatically when you are signed in and connected to the internet.
+  </p>
+  <p>
+    For offline functionality, certain data (such as downloaded content and preferences) may be stored locally on your device using secure storage. Downloaded content is encrypted and tied to your license.
+  </p>
+
+  <h2>8. Push notifications</h2>
+  <p>
+    With your permission, the App may send push notifications for purposes including:
+  </p>
+  <ul>
+    <li>Reading reminders and streak motivators</li>
+    <li>New content announcements</li>
+    <li>Achievement and Growth Plan updates</li>
+    <li>Subscription-related notifications</li>
+  </ul>
+  <p>
+    You may disable notifications at any time through your device settings or in-app notification preferences.
+  </p>
+
+  <h2>9. Acceptable use</h2>
   <p>You agree not to:</p>
   <ul>
-    <li>Use the Services in violation of law or third-party rights.</li>
-    <li>Attempt to gain unauthorized access to our systems, other users&apos; accounts, or content.</li>
-    <li>Interfere with or disrupt the Services, including by automated scraping, overloading, or distributing malware.</li>
-    <li>Share account credentials or use the Services to redistribute content commercially without authorization.</li>
-    <li>Misrepresent your identity or harass other users or our team.</li>
+    <li>Use the Services in violation of any applicable law or third-party rights.</li>
+    <li>Attempt to gain unauthorized access to our systems, other users' accounts, or encrypted content.</li>
+    <li>Interfere with or disrupt the Services, including by automated scraping, overloading servers, or distributing malware.</li>
+    <li>Share account credentials or use the Services to redistribute content commercially.</li>
+    <li>Misrepresent your identity or impersonate others.</li>
+    <li>Circumvent, bypass, or disable DRM/licensing mechanisms.</li>
+    <li>Use bots, scripts, or automated tools to access or extract content from the Services.</li>
+    <li>Harass, abuse, or harm other users or our team.</li>
   </ul>
-  <p>We may suspend or terminate access if we reasonably believe you have violated these rules or these Terms.</p>
+  <p>We may suspend or terminate your access if we reasonably believe you have violated these rules or these Terms.</p>
 
-  <h2>7. Third-party services</h2>
+  <h2>10. Third-party services</h2>
   <p>
-    The Services rely on third parties (e.g., Google / Firebase, RevenueCat, Cloudflare, app stores). Their terms and privacy policies apply to your use of those services. We are not responsible for third-party services outside our reasonable control.
+    The Services rely on trusted third-party providers:
+  </p>
+  <ul>
+    <li><strong>Google / Firebase:</strong> Authentication, cloud database (Firestore), push notifications (Firebase Cloud Messaging), analytics, app integrity (App Check), and crash reporting (Crashlytics). See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+    <li><strong>RevenueCat:</strong> Subscription management and entitlement verification. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+    <li><strong>Google Play:</strong> In-app purchases and subscription billing. Subject to Google Play Terms of Service.</li>
+    <li><strong>Cloudflare:</strong> Secure delivery of encrypted audio content via Cloudflare Workers. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>.</li>
+  </ul>
+  <p>
+    Their terms and privacy policies apply to your use of those services. We are not responsible for third-party services beyond our reasonable control.
   </p>
 
-  <h2>8. Disclaimers</h2>
+  <h2>11. Disclaimers</h2>
   <p>
-    THE SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, TO THE FULLEST EXTENT PERMITTED BY LAW. We do not warrant that the Services will be error-free, secure, or uninterrupted.
+    THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, TO THE FULLEST EXTENT PERMITTED BY LAW.
+  </p>
+  <p>
+    WE DO NOT WARRANT THAT:
+  </p>
+  <ul>
+    <li>The Services will be error-free, secure, or uninterrupted.</li>
+    <li>Any specific content, title, or feature will be available at all times.</li>
+    <li>The Services will meet your specific requirements.</li>
+    <li>The quality of any audio, content, or information will meet your expectations.</li>
+  </ul>
+
+  <h2>12. Limitation of liability</h2>
+  <p>
+    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE AND OUR AFFILIATES, LICENSORS, AND SUPPLIERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICES.
+  </p>
+  <p>
+    OUR TOTAL LIABILITY FOR CLAIMS ARISING OUT OF OR RELATED TO THE SERVICES OR THESE TERMS WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE SERVICES IN THE TWELVE (12) MONTHS BEFORE THE CLAIM OR (B) FIFTY U.S. DOLLARS (USD $50), IF NO FEES WERE PAID.
+  </p>
+  <p>
+    SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS OF LIABILITY; IN THOSE CASES, OUR LIABILITY IS LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.
   </p>
 
-  <h2>9. Limitation of liability</h2>
+  <h2>13. Indemnity</h2>
   <p>
-    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE AND OUR AFFILIATES, LICENSORS, AND SUPPLIERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICES. OUR TOTAL LIABILITY FOR CLAIMS ARISING OUT OF OR RELATED TO THE SERVICES OR THESE TERMS WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE SERVICES IN THE TWELVE (12) MONTHS BEFORE THE CLAIM OR (B) FIFTY U.S. DOLLARS (USD $50), IF NO FEES WERE PAID. SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS; IN THOSE CASES, OUR LIABILITY IS LIMITED TO THE FULLEST EXTENT PERMITTED BY LAW.
+    You agree to defend, indemnify, and hold harmless us and our affiliates, officers, employees, and agents from claims, damages, losses, and expenses (including reasonable legal fees) arising from:
+  </p>
+  <ul>
+    <li>Your use of the Services.</li>
+    <li>Your violation of these Terms.</li>
+    <li>Your violation of any third-party rights.</li>
+  </ul>
+  <p>
+    to the extent permitted by applicable law.
   </p>
 
-  <h2>10. Indemnity</h2>
+  <h2>14. Termination</h2>
   <p>
-    You agree to defend, indemnify, and hold harmless us and our affiliates, officers, and agents from claims, damages, losses, and expenses (including reasonable legal fees) arising from your use of the Services, your violation of these Terms, or your violation of others&apos; rights, to the extent permitted by law.
+    You may stop using the Services and delete your account at any time through the App's settings or by contacting us.
+  </p>
+  <p>
+    We may suspend or terminate your access if you:
+  </p>
+  <ul>
+    <li>Breach these Terms.</li>
+    <li>Fail to maintain a valid subscription (if required for the features you use).</li>
+    <li>Are required to do so by law.</li>
+    <li>Pose a risk to the Services, other users, or third parties.</li>
+  </ul>
+  <p>
+    Upon termination, your right to use the Services ceases immediately. Provisions that by their nature should survive termination (including disclaimers, limitations of liability, intellectual property, and governing law) will survive.
   </p>
 
-  <h2>11. Termination</h2>
+  <h2>15. Changes to these Terms</h2>
   <p>
-    You may stop using the Services at any time. We may suspend or terminate your access if you breach these Terms, if required by law, or to protect the Services or other users. Provisions that by their nature should survive (including licenses granted to us for feedback where applicable, disclaimers, limitations of liability, and governing law) will survive termination.
+    We may update these Terms from time to time. We will post the revised Terms with an updated "Last updated" date at this location.
+  </p>
+  <p>
+    If changes are material, we may provide additional notice (e.g., in-App notification or email) where required by applicable law. Continued use of the Services after the effective date of updated Terms constitutes your acceptance of the changes.
   </p>
 
-  <h2>12. Changes to these Terms</h2>
+  <h2>16. Governing law and disputes</h2>
   <p>
-    We may update these Terms from time to time. We will post the revised Terms with an updated &quot;Last updated&quot; date. If changes are material, we may provide additional notice (e.g., in the App) where required. Continued use after the effective date constitutes acceptance of the updated Terms.
+    These Terms are governed by applicable law in the jurisdiction where our company is established, without regard to conflict-of-law principles, except where mandatory consumer protections in your country require otherwise.
+  </p>
+  <p>
+    If a dispute arises, you agree to try to resolve it informally by contacting us first. If informal resolution fails within 30 days, courts or tribunals with jurisdiction over the dispute may hear the claim, unless applicable law requires a different forum.
+  </p>
+  <p>
+    For EU users: You may also use the European Commission's Online Dispute Resolution platform at <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>.
   </p>
 
-  <h2>13. Governing law and disputes</h2>
+  <h2>17. Miscellaneous</h2>
   <p>
-    These Terms are governed by applicable law without regard to conflict-of-law principles, except where mandatory consumer protections in your country require otherwise. If a dispute arises, you agree to try to resolve it informally by contacting us first. If informal resolution fails, courts or tribunals with jurisdiction over the dispute may hear the claim, unless applicable law requires a different forum.
+    These Terms constitute the entire agreement between you and us regarding the Services and supersede all prior agreements and understandings on the same subject.
+  </p>
+  <p>
+    If any provision of these Terms is found unenforceable, the remaining provisions will remain in full force and effect.
+  </p>
+  <p>
+    Our failure to enforce any provision is not a waiver of our right to enforce it later.
+  </p>
+  <p>
+    You may not assign these Terms without our prior written consent. We may assign these Terms in connection with a merger, acquisition, sale of assets, or similar transaction.
   </p>
 
-  <h2>14. Miscellaneous</h2>
+  <h2>18. Contact</h2>
   <p>
-    These Terms constitute the entire agreement between you and us regarding the Services and supersede prior agreements on the same subject. If any provision is unenforceable, the remaining provisions remain in effect. Our failure to enforce a provision is not a waiver. You may not assign these Terms without our consent; we may assign them in connection with a merger, sale, or similar transaction.
-  </p>
-
-  <h2>15. Contact</h2>
-  <p>
-    For questions about these Terms, contact us at:<br />
+    For questions about these Terms, privacy concerns, or support requests, contact us at:<br />
     <strong>Email:</strong> <a href="mailto:thealphadays@gmail.com">thealphadays@gmail.com</a>
   </p>
   <p>
-    <strong>Google Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.bookiepia.app" target="_blank" rel="noopener">Leap Over on Google Play</a>
+    <strong>Google Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.bookiepia.app" target="_blank" rel="noopener">GoBrief on Google Play</a>
+  </p>
+  <p>
+    <strong>Developer:</strong> learnwithvishy<br />
+    <strong>App Version:</strong> 1.0.3
   </p>
 </body>
 </html>
