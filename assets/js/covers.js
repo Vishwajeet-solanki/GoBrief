@@ -82,5 +82,28 @@
     return el;
   }
 
-  window.GBCovers = { coverEl: coverEl, hash: hash };
+  /* Category artwork, keyed by section id (stable across data regen). */
+  var SECTION_IMAGES = {
+    "2": "self_growth.png",
+    "3": "business-and-career.png",
+    "4": "fiction.png",
+    "5": "productivity.png",
+    "6": "home-and-environment.png",
+    "7": "society-and-tech.png",
+    "8": "Health.png",
+    "9": "Family.png",
+    "10": "sports-and-fitness.png",
+    "11": "Personalities.png",
+    "12": "Happiness.png",
+    "13": "spirituality.png",
+    "14": "leadership.png",
+    "15": "money-and-investment.png",
+    "16": "negotiation.png",
+  };
+  function sectionImage(id) {
+    var f = SECTION_IMAGES[String(id)];
+    return f ? "assets/images/" + f : "";
+  }
+
+  window.GBCovers = { coverEl: coverEl, hash: hash, sectionImage: sectionImage };
 })();

@@ -75,8 +75,12 @@
     a.className = "cat";
     a.href = "explore.html?section=" + encodeURIComponent(s.id);
     a.setAttribute("data-reveal", "");
+    var img = window.GBCovers.sectionImage(s.id);
+    var swatch = img
+      ? '<span class="cat__swatch"><img src="' + img + '" alt="" loading="lazy" /></span>'
+      : '<span class="cat__swatch" style="background:linear-gradient(135deg,' + s.gradient[0] + "," + s.gradient[1] + ')"></span>';
     a.innerHTML =
-      '<span class="cat__swatch" style="background:linear-gradient(135deg,' + s.gradient[0] + "," + s.gradient[1] + ')"></span>' +
+      swatch +
       '<span><span class="cat__title">' + s.title + '</span><br /><span class="cat__sub">' + s.subtitle + "</span></span>" +
       '<span class="cat__count">' + s.bookCount + " books</span>";
     cats.appendChild(a);

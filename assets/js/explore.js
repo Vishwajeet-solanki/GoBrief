@@ -130,7 +130,10 @@
     DATA.sections.forEach(function (s) {
       var chip = document.createElement("button");
       chip.className = "filter-chip" + (state.section === s.id ? " is-active" : "");
-      chip.innerHTML = '<i style="background:linear-gradient(135deg,' + s.gradient[0] + "," + s.gradient[1] + ')"></i>' + esc(s.title);
+      var img = Covers.sectionImage(s.id);
+      chip.innerHTML = (img
+        ? '<img class="filter-chip__img" src="' + img + '" alt="" loading="lazy" />'
+        : '<i style="background:linear-gradient(135deg,' + s.gradient[0] + "," + s.gradient[1] + ')"></i>') + esc(s.title);
       chip.addEventListener("click", function () {
         state.section = state.section === s.id ? "all" : s.id;
         refresh();
