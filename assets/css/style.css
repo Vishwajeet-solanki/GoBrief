@@ -635,6 +635,11 @@ body.gb-anim [data-hero-fade] { opacity: 0; transform: translateY(18px); }
   transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s;
 }
 .store-badge:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -12px rgba(255,255,255,.25); }
+.store-badge--soon {
+  background: rgba(255,255,255,.08); color: var(--faint);
+  border: 1px solid rgba(255,255,255,.12); cursor: default;
+}
+.store-badge--soon:hover { transform: none; box-shadow: none; }
 .store-badge span { display: flex; flex-direction: column; text-align: left; font-family: var(--font-display); font-weight: 700; font-size: 16px; line-height: 1.15; }
 .store-badge small { font-size: 9px; font-weight: 600; letter-spacing: .08em; opacity: .7; }
 .cta-note { margin-top: 30px; color: var(--faint); font-size: 14.5px; }
