@@ -144,12 +144,14 @@
     modalContent.innerHTML = html;
     modal.hidden = false;
     document.body.style.overflow = "hidden";
+    if (lenis) lenis.stop();
     modal.querySelector(".modal__panel").scrollTop = 0;
   }
   function closeModal() {
     if (!modal || modal.hidden) return;
     modal.hidden = true;
     document.body.style.overflow = "";
+    if (lenis) lenis.start();
   }
   if (modal) {
     modal.querySelectorAll("[data-modal-close]").forEach(function (el) { el.addEventListener("click", closeModal); });

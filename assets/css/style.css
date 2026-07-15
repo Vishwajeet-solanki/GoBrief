@@ -665,6 +665,7 @@ body.gb-anim [data-hero-fade] { opacity: 0; transform: translateY(18px); }
 .modal__backdrop { position: absolute; inset: 0; background: rgba(4, 5, 9, 0.78); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .modal__panel {
   position: relative; width: min(680px, 100%); max-height: min(82vh, 780px); overflow: auto;
+  overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
   background: #0d0f18; border: 1px solid rgba(255,255,255,.12); border-radius: 24px;
   padding: 36px; box-shadow: 0 60px 140px -40px rgba(0,0,0,.9);
   animation: modalIn .35s cubic-bezier(.22,1,.36,1);
