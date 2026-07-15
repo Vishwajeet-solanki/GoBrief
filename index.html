@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoBrief — Big ideas from the world's best books, in minutes</title>
+  <meta name="description" content="GoBrief distills 500+ bestselling nonfiction books into sharp 15-minute summaries you can read or listen to. Quizzes, guided plans and curated tracks help the ideas stick." />
+  <meta property="og:title" content="GoBrief — Read less. Know more." />
+  <meta property="og:description" content="500+ bestselling books distilled into 15-minute summaries. Listen, read, quiz yourself, and follow guided plans." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="progress-bar" data-progress aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="GoBrief home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="26" height="26"><rect width="64" height="64" rx="15" fill="url(#bgrad)"/><defs><linearGradient id="bgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset=".55" stop-color="#A855F7"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs><path d="M22 18h17a7 7 0 0 1 0 14H22zm0 14h20a7 7 0 0 1 0 14H22z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand__name">GoBrief</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#library">Library</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#plans">Plans</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--ghost btn--sm" href="explore.html">Explore library</a>
+        <a class="btn btn--primary btn--sm" href="#get" data-magnetic>Get the app</a>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu hidden>
+    <nav aria-label="Mobile">
+      <a href="#features">Features</a>
+      <a href="#library">Library</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#plans">Plans</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="explore.html" class="mobile-menu__explore">Explore the library →</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero">
+      <div class="aurora" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--1"></span>
+        <span class="aurora__blob aurora__blob--2"></span>
+        <span class="aurora__blob aurora__blob--3"></span>
+        <span class="aurora__grid"></span>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-hero-fade><span class="dot" aria-hidden="true"></span> 500+ bestselling books, distilled</p>
+          <h1 class="hero-title">
+            <span class="line-mask"><span class="line">Big ideas from the</span></span>
+            <span class="line-mask"><span class="line"><em>world's best books.</em></span></span>
+            <span class="line-mask"><span class="line">In minutes.</span></span>
+          </h1>
+          <p class="hero-sub" data-hero-fade>
+            GoBrief turns the most important nonfiction ever written into sharp,
+            15-minute summaries you can read or listen to — then makes them stick
+            with quizzes, guided plans and curated learning tracks.
+          </p>
+          <div class="hero-actions" data-hero-fade>
+            <a class="btn btn--primary btn--lg" href="#get" data-magnetic>Get GoBrief free</a>
+            <a class="btn btn--ghost btn--lg" href="explore.html">Browse the library <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta" data-hero-fade>
+            <span><strong data-stat-inline="books">500</strong>+ summaries</span>
+            <span class="sep" aria-hidden="true"></span>
+            <span><strong data-stat-inline="sections">15</strong> categories</span>
+            <span class="sep" aria-hidden="true"></span>
+            <span><strong>Audio</strong> &amp; text</span>
+          </div>
+        </div>
+
+        <div class="hero-stage" aria-hidden="true">
+          <div class="phone" data-phone>
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="app-topbar">
+                <div>
+                  <p class="app-greet">Good evening 👋</p>
+                  <p class="app-greet-sub">Ready for today's big idea?</p>
+                </div>
+                <span class="app-streak">🔥 12</span>
+              </div>
+              <div class="app-card app-continue">
+                <div class="app-continue__cover" data-phone-cover></div>
+                <div class="app-continue__info">
+                  <p class="app-label">Continue listening</p>
+                  <p class="app-continue__title" data-phone-title>Atomic Habits</p>
+                  <div class="app-progress"><span style="width:64%"></span></div>
+                  <p class="app-continue__time">9:12 / 14:20</p>
+                </div>
+              </div>
+              <p class="app-row-label">For you</p>
+              <div class="app-shelf" data-phone-shelf></div>
+              <p class="app-row-label">Today's challenge</p>
+              <div class="app-card app-challenge">
+                <span class="app-challenge__ico">🎯</span>
+                <div>
+                  <p class="app-challenge__title">Productivity path</p>
+                  <p class="app-challenge__sub">Day 3 of 6 · 2 steps left</p>
+                </div>
+              </div>
+              <div class="app-miniplayer">
+                <span class="app-miniplayer__cover" data-phone-cover2></span>
+                <div class="app-miniplayer__meta">
+                  <p data-phone-title2>Deep Work</p>
+                  <div class="app-eq"><i></i><i></i><i></i><i></i></div>
+                </div>
+                <span class="app-miniplayer__btn">▶</span>
+              </div>
+              <div class="app-tabbar">
+                <span class="is-active">Home</span><span>Journeys</span><span>Challenges</span><span>Library</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--1" data-float="0.35"><span data-float-cover="0"></span></div>
+          <div class="float-card float-card--2" data-float="-0.5"><span data-float-cover="1"></span></div>
+          <div class="float-card float-card--3" data-float="0.7"><span data-float-cover="2"></span></div>
+          <div class="float-chip float-chip--1" data-float="-0.3">✅ Quiz passed · +50 XP</div>
+          <div class="float-chip float-chip--2" data-float="0.5">🎧 15 min · offline</div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true"><span></span>Scroll</div>
+    </section>
+
+    <!-- ============================ STATS ============================ -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat" data-reveal><strong><span data-count="books">0</span><i>+</i></strong><span>Book summaries</span></div>
+        <div class="stat" data-reveal><strong><span data-count="minutes">0</span><i>+</i></strong><span>Minutes of insight</span></div>
+        <div class="stat" data-reveal><strong><span data-count="sections">0</span></strong><span>Categories</span></div>
+        <div class="stat" data-reveal><strong><span data-count="tracks">0</span></strong><span>Curated tracks</span></div>
+        <div class="stat" data-reveal><strong><span data-count="questions">0</span></strong><span>Quiz questions</span></div>
+      </div>
+    </section>
+
+    <!-- =========================== FEATURES =========================== -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Why GoBrief</p>
+          <h2>Everything you need to <em>actually finish</em> books.</h2>
+          <p class="section-sub">Not just summaries — a complete learning system that fits into the
+            gaps of your day and refuses to let a good idea slip away.</p>
+        </div>
+
+        <div class="bento">
+          <article class="bento-card bento-card--player" data-reveal>
+            <div class="bento-card__ui player-ui" aria-hidden="true">
+              <div class="player-ui__cover" data-feature-cover></div>
+              <p class="player-ui__title">The Psychology of Money</p>
+              <p class="player-ui__author">Morgan Housel</p>
+              <div class="player-ui__bar"><span data-player-bar></span></div>
+              <div class="player-ui__times"><span>4:37</span><span>13:05</span></div>
+              <div class="player-ui__controls"><span>15↺</span><span class="play">▶</span><span>↻15</span></div>
+              <div class="player-ui__speed">1.2×</div>
+            </div>
+            <h3>Listen or read. Your pace.</h3>
+            <p>Every summary comes as crisp audio and beautifully typeset text.
+               Speed control, sleep-friendly player, seamless switching.</p>
+          </article>
+
+          <article class="bento-card" data-reveal>
+            <span class="bento-ico" aria-hidden="true">⚡</span>
+            <h3>15 minutes, not 15 hours</h3>
+            <p>Each book is distilled to the arguments, stories and takeaways that
+               matter — by readers who love the originals.</p>
+          </article>
+
+          <article class="bento-card" data-reveal>
+            <span class="bento-ico" aria-hidden="true">🧠</span>
+            <h3>Quizzes that make it stick</h3>
+            <p>240 questions across the catalog. Answer, get the why behind every
+               answer, and lock ideas into long-term memory.</p>
+          </article>
+
+          <article class="bento-card" data-reveal>
+            <span class="bento-ico" aria-hidden="true">🗺️</span>
+            <h3>Guided plans</h3>
+            <p>Multi-day journeys like the Productivity Path: a sequence of
+               summaries and checkpoints that build real skills.</p>
+          </article>
+
+          <article class="bento-card" data-reveal>
+            <span class="bento-ico" aria-hidden="true">📥</span>
+            <h3>Offline everything</h3>
+            <p>Download audio and text for flights, commutes and dead zones.
+               Your library travels with you.</p>
+          </article>
+
+          <article class="bento-card" data-reveal>
+            <span class="bento-ico" aria-hidden="true">✍️</span>
+            <h3>Highlights &amp; streaks</h3>
+            <p>Save the lines that hit hard, revisit them anytime, and keep a
+               daily streak with achievements that celebrate consistency.</p>
+          </article>
+
+          <article class="bento-card bento-card--wide" data-reveal>
+            <div class="bento-track-strip" aria-hidden="true" data-bento-strip></div>
+            <h3>Curated tracks</h3>
+            <p>17 hand-built reading tracks — from “Build Better Habits” to “Think Like an
+               Economist” — so you always know what to read next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ LIBRARY ============================ -->
+    <section class="library section" id="library">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">The library</p>
+          <h2><em>15 shelves.</em> 500 books. Zero fluff.</h2>
+          <p class="section-sub">From Stoic philosophy to startup playbooks — every shelf is stocked
+            with the books people actually recommend.</p>
+        </div>
+        <div class="cats" data-cats></div>
+      </div>
+
+      <div class="marquee-stack" aria-hidden="true">
+        <div class="marquee" data-marquee="1"><div class="marquee__track" data-marquee-track="0"></div></div>
+        <div class="marquee marquee--reverse" data-marquee="-1"><div class="marquee__track" data-marquee-track="1"></div></div>
+        <div class="marquee" data-marquee="1"><div class="marquee__track" data-marquee-track="2"></div></div>
+      </div>
+
+      <div class="container center" data-reveal>
+        <a class="btn btn--primary btn--lg" href="explore.html" data-magnetic>Browse all 500 titles</a>
+      </div>
+    </section>
+
+    <!-- ============================ TRACKS ============================ -->
+    <section class="tracks section" id="tracks">
+      <div class="tracks-pin" data-tracks-pin>
+        <div class="container">
+          <div class="section-head section-head--row" data-reveal>
+            <div>
+              <p class="kicker">Curated tracks</p>
+              <h2>Follow a track. <em>Master a topic.</em></h2>
+            </div>
+            <p class="section-sub">Each track sequences the right books in the right order —
+              no more wondering where to start.</p>
+          </div>
+        </div>
+        <div class="tracks-rail-wrap">
+          <div class="tracks-rail" data-tracks-rail></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PLANS ============================= -->
+    <section class="plans section" id="plans">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Guided plans</p>
+          <h2>Don't just read. <em>Change.</em></h2>
+          <p class="section-sub">Multi-day challenges that pair summaries with quizzes and
+            checkpoints — small daily steps, compounding results.</p>
+        </div>
+        <div class="plans-grid" data-plans></div>
+      </div>
+    </section>
+
+    <!-- ========================== QUIZ DEMO =========================== -->
+    <section class="quiz section" id="quiz">
+      <div class="container quiz-wrap">
+        <div class="quiz-copy" data-reveal>
+          <p class="kicker">Active recall</p>
+          <h2>Reading is easy. <em>Remembering</em> is the game.</h2>
+          <p class="section-sub">Every plan section ends with a quiz. Try a few real questions from
+            the app — answers include the reasoning, not just a ✓.</p>
+          <ul class="quiz-points">
+            <li>240 questions across 24 quizzes</li>
+            <li>Explanations for every answer</li>
+            <li>XP, streaks and achievements as you go</li>
+          </ul>
+        </div>
+        <div class="quiz-widget" data-quiz data-reveal>
+          <div class="quiz-widget__head">
+            <span class="quiz-widget__badge">Try it — real quiz</span>
+            <span class="quiz-widget__progress" data-quiz-progress>1 / 3</span>
+          </div>
+          <p class="quiz-widget__q" data-quiz-q>Loading…</p>
+          <div class="quiz-widget__opts" data-quiz-opts></div>
+          <div class="quiz-widget__explain" data-quiz-explain hidden></div>
+          <div class="quiz-widget__foot">
+            <button class="btn btn--primary btn--sm" data-quiz-next hidden>Next question</button>
+            <button class="btn btn--ghost btn--sm" data-quiz-restart hidden>Try again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== PRICING ============================ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Pricing</p>
+          <h2>Start free. <em>Stay curious.</em></h2>
+          <p class="section-sub">Browse the entire catalog on the free plan, with a rotating
+            selection of free summaries. Go premium when you're hooked.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card" data-reveal>
+            <h3>Free</h3>
+            <p class="price-card__price">$0<span>/ forever</span></p>
+            <p class="price-card__tag">Everything to explore</p>
+            <ul>
+              <li>Browse all 500+ titles, tracks &amp; plans</li>
+              <li>Rotating free-trial summaries — full text &amp; audio</li>
+              <li>Previews, descriptions &amp; “who should read”</li>
+              <li>Quizzes on unlocked content</li>
+              <li>Streaks, highlights &amp; achievements</li>
+            </ul>
+            <a class="btn btn--ghost" href="#get">Download free</a>
+          </article>
+          <article class="price-card price-card--pro" data-reveal>
+            <span class="price-card__glow" aria-hidden="true"></span>
+            <span class="price-card__badge">Most popular</span>
+            <h3>Premium</h3>
+            <p class="price-card__price">All&#8209;access<span>· monthly, yearly or lifetime</span></p>
+            <p class="price-card__tag">The whole library, unlocked</p>
+            <ul>
+              <li><strong>All 500+ summaries</strong> — text &amp; audio</li>
+              <li>Unlimited offline downloads</li>
+              <li>All guided plans &amp; every quiz</li>
+              <li>Full curated tracks</li>
+              <li>Everything in Free, forever synced</li>
+            </ul>
+            <a class="btn btn--primary" href="#get" data-magnetic>Start with the app</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== FAQ ============================= -->
+    <section class="faq section" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head" data-reveal>
+          <p class="kicker">FAQ</p>
+          <h2>Questions, <em>answered.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>What exactly is a GoBrief summary?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>A careful distillation of a nonfiction book's core arguments, stories and
+               takeaways — about 15 minutes to read or listen to. It's the fastest honest way
+               to know whether a book deserves your next 10 hours.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>What do I get on the free plan?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>The entire catalog is browsable — every title, description, track, plan and
+               “who should read this” guide. A rotating selection of summaries is fully
+               unlocked (text and audio), and features like streaks, highlights and quizzes
+               work on everything you can access.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Can I listen offline?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>Yes. Premium members can download any summary's audio and text for fully
+               offline listening — flights, subways, mountains, wherever.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How are books chosen and summarized?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>We stock the shelves with books people actually recommend — enduring
+               bestsellers and modern classics across 15 categories — and hold every summary
+               to the same bar: faithful to the author, ruthless with fluff.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Do summaries replace the real books?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>No — they're a map, not the territory. Every book page links to the full book,
+               and our favorite outcome is you falling in love with one and buying it.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How do I delete my account or data?<span class="faq-x" aria-hidden="true"></span></summary>
+            <p>Anytime, in-app or via our <a href="delete-account.html">account deletion page</a>.
+               Your data, your call.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CTA ============================= -->
+    <section class="cta section" id="get">
+      <div class="aurora aurora--cta" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--1"></span>
+        <span class="aurora__blob aurora__blob--2"></span>
+      </div>
+      <div class="container center">
+        <h2 class="cta-title" data-reveal>Your next<br /><em>500 books</em><br />start tonight.</h2>
+        <p class="section-sub" data-reveal>Free to start. 15 minutes to your first big idea.</p>
+        <div class="store-badges" data-reveal>
+          <!-- Replace href="#" with your Play Store / App Store URLs when live -->
+          <a class="store-badge" href="#" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.9 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.7 8.8 2.6-2.6 3.3 1.9c.9.5.9 1.7 0 2.2l-3.3 1.9-2.6-2.6-.4-.4.4-.4zM5.2 1.6l9.6 9.6-2.3 2.3L5.2 1.6zm0 20.8 7.3-11.9 2.3 2.3-9.6 9.6z"/></svg>
+            <span><small>GET IT ON</small>Google Play</span>
+          </a>
+          <a class="store-badge" href="#" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c-.03-2.9 2.37-4.29 2.48-4.36-1.35-1.97-3.45-2.24-4.2-2.27-1.78-.18-3.48 1.05-4.39 1.05-.9 0-2.3-1.03-3.79-1-1.95.03-3.75 1.13-4.75 2.88-2.03 3.52-.52 8.72 1.46 11.58.97 1.4 2.12 2.97 3.63 2.91 1.46-.06 2.01-.94 3.77-.94s2.26.94 3.8.91c1.57-.03 2.57-1.42 3.53-2.83 1.11-1.62 1.57-3.19 1.6-3.27-.04-.02-3.07-1.18-3.14-4.66zM14.16 4.1c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"/></svg>
+            <span><small>DOWNLOAD ON THE</small>App Store</span>
+          </a>
+        </div>
+        <p class="cta-note" data-reveal>Or keep exploring — <a href="explore.html">the full library is right here</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="24" height="24"><rect width="64" height="64" rx="15" fill="url(#fgrad)"/><defs><linearGradient id="fgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset=".55" stop-color="#A855F7"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs><path d="M22 18h17a7 7 0 0 1 0 14H22zm0 14h20a7 7 0 0 1 0 14H22z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand__name">GoBrief</span>
+        </a>
+        <p>Read less. Know more.<br />500+ of the world's best books, distilled.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <h4>Product</h4>
+        <a href="explore.html">Explore the library</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy policy</a>
+        <a href="terms-of-service.html">Terms of service</a>
+        <a href="delete-account.html">Delete account &amp; data</a>
+      </nav>
+      <nav class="footer-col" aria-label="Contact">
+        <h4>Contact</h4>
+        <a href="mailto:thealphadays@gmail.com">thealphadays@gmail.com</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> GoBrief. All rights reserved.</p>
+      <p>All book titles and author names belong to their respective owners.</p>
+    </div>
+  </footer>
+
+  <!-- Shared modal (plan details) -->
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <button class="modal__close" data-modal-close aria-label="Close">✕</button>
+      <div class="modal__content" data-modal-content></div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/covers.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

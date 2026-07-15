@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore the library — GoBrief</title>
+  <meta name="description" content="Browse all 500+ GoBrief book summaries across 15 categories, plus 17 curated tracks and 12 guided plans." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header is-scrolled" data-header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="GoBrief home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="26" height="26"><rect width="64" height="64" rx="15" fill="url(#bgrad)"/><defs><linearGradient id="bgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset=".55" stop-color="#A855F7"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs><path d="M22 18h17a7 7 0 0 1 0 14H22zm0 14h20a7 7 0 0 1 0 14H22z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand__name">GoBrief</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#tracks">Tracks</a>
+        <a href="index.html#plans">Plans</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm" href="index.html#get">Get the app</a>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu hidden>
+    <nav aria-label="Mobile">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#tracks">Tracks</a>
+      <a href="index.html#plans">Plans</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#get" class="mobile-menu__explore">Get the app →</a>
+    </nav>
+  </div>
+
+  <main class="explore-main">
+    <div class="aurora" aria-hidden="true" style="height: 60vh;">
+      <span class="aurora__blob aurora__blob--1"></span>
+      <span class="aurora__blob aurora__blob--2"></span>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+      <section class="explore-hero">
+        <p class="kicker">The GoBrief library</p>
+        <h1>Every book. <em>Every shelf.</em></h1>
+        <p class="section-sub">Browse all <strong data-x-count>500</strong> summaries, 17 curated tracks and 12 guided
+          plans — exactly what you'll find inside the app.</p>
+        <div class="explore-search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" placeholder="Search 500+ books, authors…" data-search aria-label="Search books" />
+        </div>
+      </section>
+
+      <div class="explore-tabs" role="tablist" aria-label="Content type">
+        <button class="explore-tab is-active" data-tab="books" role="tab" aria-selected="true">Books</button>
+        <button class="explore-tab" data-tab="tracks" role="tab" aria-selected="false">Tracks</button>
+        <button class="explore-tab" data-tab="plans" role="tab" aria-selected="false">Plans</button>
+      </div>
+
+      <div class="filter-row" data-filters></div>
+
+      <p class="results-meta" data-results-meta></p>
+
+      <div data-panel="books">
+        <div class="books-grid" data-books-grid></div>
+        <div class="load-sentinel" data-sentinel></div>
+      </div>
+      <div data-panel="tracks" hidden>
+        <div class="explore-tracks-grid" data-tracks-grid></div>
+      </div>
+      <div data-panel="plans" hidden>
+        <div class="explore-plans-grid plans-grid" data-plans-grid></div>
+      </div>
+
+      <div class="empty-state" data-empty hidden>
+        <strong>No matches found</strong>
+        <p>Try a different title, author or category.</p>
+      </div>
+
+      <section class="explore-cta">
+        <h2>Like what you see? <em>It's better in the app.</em></h2>
+        <p>Audio summaries, offline mode, quizzes, streaks and guided plans — free to start.</p>
+        <a class="btn btn--primary btn--lg" href="index.html#get">Get GoBrief</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="24" height="24"><rect width="64" height="64" rx="15" fill="url(#fgrad)"/><defs><linearGradient id="fgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset=".55" stop-color="#A855F7"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs><path d="M22 18h17a7 7 0 0 1 0 14H22zm0 14h20a7 7 0 0 1 0 14H22z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand__name">GoBrief</span>
+        </a>
+        <p>Read less. Know more.<br />500+ of the world's best books, distilled.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product">
+        <h4>Product</h4>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <nav class="footer-col" aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="privacy-policy.html">Privacy policy</a>
+        <a href="terms-of-service.html">Terms of service</a>
+        <a href="delete-account.html">Delete account &amp; data</a>
+      </nav>
+      <nav class="footer-col" aria-label="Contact">
+        <h4>Contact</h4>
+        <a href="mailto:thealphadays@gmail.com">thealphadays@gmail.com</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> GoBrief. All rights reserved.</p>
+      <p>All book titles and author names belong to their respective owners.</p>
+    </div>
+  </footer>
+
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <button class="modal__close" data-modal-close aria-label="Close">✕</button>
+      <div class="modal__content" data-modal-content></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/data-details.js"></script>
+  <script src="assets/js/covers.js"></script>
+  <script src="assets/js/explore.js"></script>
+</body>
+</html>
