@@ -1,6 +1,8 @@
-/* GoBrief — procedural book covers.
-   No external images: every cover is generated from the book's id/title,
-   themed with its category gradient. */
+/* GoBrief — book covers.
+   Uses the real cover image (Cloudflare R2) when the book has one; otherwise
+   falls back to a procedural cover generated from the book's id/title and
+   themed with its category gradient. The gradient also shows while the image
+   loads or if it errors. */
 (function () {
   "use strict";
 
@@ -22,6 +24,21 @@
         sectionGradients[s.id] = s.gradient;
       });
     }
+  }
+
+  /* id -> coverUrl, so books passed by {id,title} only (e.g. track lists)
+     still resolve their real cover. */
+  var coverById = null;
+  function coverUrlFor(book) {
+    if (book.c || book.coverUrl) return book.c || book.coverUrl;
+    if (coverById === null) {
+      coverById = {};
+      var data = window.GOBRIEF_DATA;
+      if (data && data.books) {
+        data.books.forEach(function (b) { if (b.c) coverById[b.id] = b.c; });
+      }
+    }
+    return coverById[book.id || book.t || book.title] || "";
   }
 
   function hash(str) {
@@ -51,6 +68,24 @@
     el.style.background =
       "linear-gradient(" + angle + "deg," + grad[0] + " 0%," + grad[1] + " 100%)";
     el.setAttribute("aria-label", title + (author ? " by " + author : ""));
+
+    // Real cover art (Cloudflare R2). Falls back to the generated gradient
+    // cover below if none is set or the image fails to load.
+    var coverUrl = coverUrlFor(book);
+    if (coverUrl) {
+      el.classList.add("gb-cover--photo");
+      var img = document.createElement("img");
+      img.className = "gb-cover__img";
+      img.src = coverUrl;
+      img.alt = title + (author ? " by " + author : "");
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.addEventListener("error", function () {
+        el.classList.remove("gb-cover--photo");
+        img.remove();
+      });
+      el.appendChild(img);
+    }
 
     var deco = document.createElement("span");
     deco.className = "gb-cover__deco";
