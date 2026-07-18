@@ -299,12 +299,18 @@
     lenis.on("scroll", ScrollTrigger.update);
     gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
     gsap.ticker.lagSmoothing(0);
-    // Anchor links through Lenis
-    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-      a.addEventListener("click", function (e) {
-        var target = document.querySelector(a.getAttribute("href"));
-        if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -70 }); }
-      });
+    // Anchor links through Lenis — delegated so links injected later
+    // (e.g. the "#get" button inside the plan modal) are covered too.
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var hash = a.getAttribute("href");
+      if (hash.length < 2) return;
+      var target = document.querySelector(hash);
+      if (!target) return;
+      e.preventDefault();
+      if (window.history && history.pushState) history.pushState(null, "", hash);
+      lenis.scrollTo(target, { offset: -70 });
     });
   }
 
@@ -359,8 +365,25 @@
       gsap.to(batch, { opacity: 1, y: 0, duration: 0.95, stagger: 0.08, ease: "power3.out", overwrite: true });
     },
   });
+  // Landing with a hash (e.g. explore.html -> index.html#get): the browser
+  // jumps before the pinned tracks section adds its extra scroll length, so
+  // everything below #tracks ends up short of the target. Re-run the jump
+  // once triggers exist, and again when layout is final.
+  function scrollToHash() {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    var target;
+    try { target = document.querySelector(hash); } catch (err) { return; }
+    if (!target) return;
+    if (lenis) lenis.scrollTo(target, { offset: -70, immediate: true });
+    else window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: "auto" });
+  }
+
   // Safety: anything still hidden when it's already in view (e.g. late layout)
-  window.addEventListener("load", function () { ScrollTrigger.refresh(); });
+  window.addEventListener("load", function () {
+    ScrollTrigger.refresh();
+    scrollToHash();
+  });
 
   // Stat counters
   document.querySelectorAll("[data-count]").forEach(function (el) {
@@ -430,4 +453,8 @@
     ease: "none",
     scrollTrigger: { trigger: ".cta", start: "top bottom", end: "center center", scrub: 0.6 },
   });
+
+  // All pins are registered now — correct the hash position right away so
+  // the page doesn't sit mid-scroll until the load event.
+  scrollToHash();
 })();
