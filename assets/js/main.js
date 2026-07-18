@@ -377,6 +377,14 @@
     if (!target) return;
     if (lenis) lenis.scrollTo(target, { offset: -70, immediate: true });
     else window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: "auto" });
+    // The reveal batch only fires on scroll updates; after a hash jump the
+    // page is static, so anything already at/above the viewport stays at
+    // opacity 0 ("blank" section). Reveal it explicitly.
+    document.querySelectorAll("[data-reveal]").forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) {
+        gsap.to(el, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", overwrite: true });
+      }
+    });
   }
 
   // Safety: anything still hidden when it's already in view (e.g. late layout)
