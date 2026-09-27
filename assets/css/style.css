@@ -702,6 +702,7 @@ body.gb-anim [data-hero-fade] { opacity: 0; transform: translateY(18px); }
 .chip--premium { background: var(--grad); color: #fff; border: 0; }
 .chip--free { background: rgba(52, 211, 153, .16); border-color: rgba(52, 211, 153, .4); color: var(--ok); }
 .book-detail__actions { display: flex; gap: 10px; margin-top: auto; flex-wrap: wrap; }
+.book-detail .book-detail__disclosure { margin: 0; font-size: 12px; color: var(--faint); }
 .book-detail h4 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 24px 0 10px; }
 .book-detail p { color: var(--muted); font-size: 15px; }
 .book-detail__who { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; color: var(--muted); font-size: 14.5px; }

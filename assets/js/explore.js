@@ -5,6 +5,7 @@
   var DATA = window.GOBRIEF_DATA || { stats: {}, sections: [], books: [], tracks: [], plans: [] };
   var DETAILS = (window.GOBRIEF_DETAILS && window.GOBRIEF_DETAILS.books) || {};
   var Covers = window.GBCovers;
+  var Amazon = window.GBAmazon;
 
   var sectionById = {};
   DATA.sections.forEach(function (s) { sectionById[s.id] = s; });
@@ -66,8 +67,10 @@
       "</div>" +
       '<div class="book-detail__actions">' +
       '<a class="btn btn--primary btn--sm" href="index.html#get">Read in the app</a>' +
-      (d.z ? '<a class="btn btn--ghost btn--sm" href="' + esc(d.z) + '" target="_blank" rel="noopener">Get the full book ↗</a>' : "") +
-      "</div></div></div>";
+      (d.z ? '<a class="btn btn--ghost btn--sm" href="' + esc(Amazon.href(d.z, b.t, b.a)) + '" target="_blank" rel="sponsored noopener">Get the full book ↗</a>' : "") +
+      "</div>" +
+      (d.z && Amazon.tagged ? '<p class="book-detail__disclosure">' + esc(Amazon.disclosure) + "</p>" : "") +
+      "</div></div>";
     if (d.d) html += "<h4>The idea</h4><p>" + esc(d.d) + "</p>";
     if (d.j) html += "<h4>About this journey</h4><p>" + esc(d.j) + "</p>";
     if (d.w && d.w.length) {
